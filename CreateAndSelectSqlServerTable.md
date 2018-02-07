@@ -1,7 +1,7 @@
 Create a table in SQL Server:
 
 ```
-create table tblPerson(firstname nvarchar(50),lastname nvarchar(50),city nvarchar(50),state nvarchar(50))
+CREATE TABLE tblPerson(firstname nvarchar(50),lastname nvarchar(50),city nvarchar(50),state nvarchar(50))
 ```
 
 
