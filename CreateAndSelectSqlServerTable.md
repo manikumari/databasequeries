@@ -1,7 +1,13 @@
 Create a table in SQL Server:
 
 ```
-CREATE TABLE tblPerson(firstname nvarchar(50),lastname nvarchar(50),city nvarchar(50),state nvarchar(50))
+CREATE TABLE tblPersons
+
+( PersonsId int,FirstName varchar(50),LastName varchar(50))
+
+CREATE TABLE tblAdresses
+
+( AdressesId int,PersonsId int,,City varchar(50),State varchar(50));
 ```
 
 
@@ -9,8 +15,10 @@ CREATE TABLE tblPerson(firstname nvarchar(50),lastname nvarchar(50),city nvarcha
 Select columns in a table:
 
 ```
-SELECT firstname,lastname,city,state from tblPerson
-join tblAddress on tblperson.personid=tblAddress.personid
+SELECT FirstName,LastName,City,State 
+from tblPersons
+join tblAddresses 
+on tblpersons.personsid=tblAddresses.tblpersonsid;
 ```
 
 
