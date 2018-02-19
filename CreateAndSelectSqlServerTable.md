@@ -1,25 +1,55 @@
-Create a table in SQL Server:
+
+
+Table: `Persons`
 
 ```
-CREATE TABLE tblPersons
-
-( PersonsId int,FirstName varchar(50),LastName varchar(50))
-
-CREATE TABLE tblAdresses
-
-( AdressesId int,PersonsId int,,City varchar(50),State varchar(50));
-```
-
-
-
-Select columns in a table:
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| PersonId    | int     |
+| FirstName   | varchar |
+| LastName    | varchar |
++-------------+---------+
+PersonsId is the primary key column for this table.
 
 ```
-SELECT FirstName,LastName,City,State 
-from tblPersons
-join tblAddresses 
-on tblpersons.personsid=tblAddresses.tblpersonsid;
+
+Table: `Addresses`
+
+```
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| AddressId   | int     |
+| PersonId    | int     |
+| City        | varchar |
+| State       | varchar |
++-------------+---------+
+AddressesId is the primary key column for this table.
+
 ```
 
+**SOLUTION**:
 
+```
+CREATE TABLE	Persons( PersonsId int,FirstName varchar(50),LastName varchar(50))
+
+```
+
+```
+CREATE TABLE   	 Adresses ( AdressesId int,PersonsId int,,City varchar(50),State varchar(50))
+
+```
+
+This QUERY JOINS COLUMNS FROM 2 SEPERATE TABLES
+
+```
+SELECT 	FirstName,LastName,City,State
+
+ FROM	 Persons
+
+JOIN	 Addresses 
+
+ON		 persons.personsid=Addresses.personsid
+```
 
