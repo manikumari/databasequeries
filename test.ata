@@ -1,0 +1,16 @@
+ Volume in drive C is OS
+ Volume Serial Number is 4A79-4F36
+
+ Directory of C:\github\databasequeries
+
+02/21/2018  07:28 PM    <DIR>          .
+02/21/2018  07:28 PM    <DIR>          ..
+02/20/2018  07:46 PM               994 CreateAndSelectSqlServerTable.md
+02/20/2018  07:46 PM             1,202 FindandDeleteDuplicateEmails.md
+02/20/2018  07:46 PM               839 FindDuplicateRowsInSqlTable .md
+02/20/2018  07:46 PM               956 FindMaxHighestSalary.md
+02/20/2018  07:46 PM             1,284 FindSecondMaxHighestsalary.md
+02/20/2018  07:46 PM                64 README.md
+02/21/2018  07:28 PM                 0 test.ata
+               7 File(s)          5,339 bytes
+               2 Dir(s)  996,455,407,616 bytes free
