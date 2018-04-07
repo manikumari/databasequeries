@@ -29,7 +29,13 @@ AddressesId is the primary key column for this table.
 
 ```
 
-**SOLUTION**:
+Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:
+
+```
+FirstName, LastName, City, State
+```
+
+SOLUTION:
 
 ```
 CREATE TABLE	Persons( PersonsId int,FirstName varchar(50),LastName varchar(50))
@@ -41,15 +47,17 @@ CREATE TABLE   	 Adresses ( AdressesId int,PersonsId int,,City varchar(50),State
 
 ```
 
-This QUERY JOINS COLUMNS FROM 2 SEPERATE TABLES
+Since the *PersonId* in table **Addresses** is the foreign key of table **Persons**, we can join this two table to get the address information of a person.
+
+This query JOINS columns from 2 seperate tables
 
 ```
-SELECT 	FirstName,LastName,City,State
+SELECT	FirstName,LastName,City,State
 
- FROM	 Persons
+FROM	Persons
 
-JOIN	 Addresses 
+JOIN	Addresses 
 
-ON		 persons.personsid=Addresses.personsid
+ON		persons.personsid=Addresses.personsid
 ```
 
