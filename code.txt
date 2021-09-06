@@ -1,2 +1,4 @@
 printf
+int
+global
 getch
